@@ -1,4 +1,4 @@
-package controller;
+package model;
 
 import entity.Student;
 import persistence.IModel.IStudent;
