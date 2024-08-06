@@ -34,4 +34,4 @@ CREATE TABLE qualify(
     CONSTRAINT FOREIGN KEY (student_id) REFERENCES Student(id)
 );
 
-
+https://github.com/Jcgmtxt/Filtro-Java/
