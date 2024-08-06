@@ -1,13 +1,11 @@
 package persistence.IModel;
 
 import entity.Course;
-import persistence.CRUD.ICreate;
-import persistence.CRUD.IDelete;
-import persistence.CRUD.IReadAll;
-import persistence.CRUD.IUpdate;
+import persistence.CRUD.*;
 
 public interface ICourse extends ICreate<Course>,
         IReadAll<Course>,
+        IReadModel<Course>,
         IUpdate<Course>,
         IDelete<Integer> {
 }

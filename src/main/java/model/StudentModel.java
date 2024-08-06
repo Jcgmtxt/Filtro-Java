@@ -15,7 +15,7 @@ public class StudentModel implements IStudent {
     public Student create(Student object) {
         PreparedStatement preparedStatement = null;
         Connection connection = ConfigDB.openConnection();
-        String query = "INSERT INTO student (name, email, active_student) VALUES (?, ?, ?)";
+        String query = "INSERT INTO student (name, email, active_student) VALUES (?, ?, ?);";
         try {
             preparedStatement = connection.prepareStatement(query, PreparedStatement.RETURN_GENERATED_KEYS);
             preparedStatement.setString(1, object.getName());
@@ -75,7 +75,7 @@ public class StudentModel implements IStudent {
     public boolean update(Student object) {
         PreparedStatement preparedStatement = null;
         Connection connection = ConfigDB.openConnection();
-        String query = "UPDATE student SET name = ?, email = ?, active_student = ? WHERE id = ?";
+        String query = "UPDATE student SET name = ?, email = ?, active_student = ? WHERE id = ?;";
         try {
             preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, object.getName());
@@ -130,7 +130,7 @@ public class StudentModel implements IStudent {
     public Student readMail(Student Object) {
         PreparedStatement preparedStatement = null;
         Connection connection = ConfigDB.openConnection();
-        String query = "SELECT * FROM student WHERE email = ?";
+        String query = "SELECT * FROM student WHERE email = ?;";
         try {
             preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, Object.getEmail());

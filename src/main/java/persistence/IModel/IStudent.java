@@ -9,4 +9,5 @@ import persistence.CRUD.IUpdate;
 public interface IStudent extends ICreate<Student>,
         IReadAll<Student>,
         IReadModel<Student>,
-        IUpdate<Student> {}
+        IUpdate<Student>
+{}

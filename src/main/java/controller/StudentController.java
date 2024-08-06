@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class StudentController {
     IStudent iStudent = new StudentModel();
 
-    public void create(Student student){
+    public static create(Student student){
         this.iStudent.create(student);
     }
 

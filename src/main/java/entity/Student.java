@@ -9,8 +9,7 @@ public class Student {
 
     public Student() {
     }
-    public Student(int id, String name, String email) {
-        this.id = id;
+    public Student(String name, String email) {
         this.name = name;
         this.email = email;
         this.active_student = true;
